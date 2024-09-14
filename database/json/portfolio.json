@@ -1,0 +1,74 @@
+[
+    {
+        "id":"1",
+        "project_name":"MSP",
+        "technology":"Angular",
+        "sub_title":"Managed service provider System",
+        "image":"assets/images/portfolio/msp.png",
+        "description":"MSP(managed service provider) System -Technologies: Angular, HTML, CSS, Bootstrap, Fontawesome. Description: Help companies to manage services that are provided to clients.",
+        "_link":"https://operationmsp.com"
+    },
+    {
+        "id":"2",
+        "project_name":"Happy Feedback System",
+        "technology":"Angular",
+        "sub_title":"System for Social Media Management",
+        "image":"assets/images/portfolio/happyfeedback.png",
+        "description":"Technologies: Angular, HTML, CSS, Bootstrap, Fontawesome. Description: System for Social Media Management",
+        "_link":"https://gethappyfeedback.com"
+    },
+    {
+        "id":"3",
+        "project_name":"Fi-galaxy System",
+        "technology":"Angular - Firebase",
+        "sub_title":"",
+        "image":"assets/images/portfolio/fi-galaxy.png",
+        "description":"Technologies: Angular, HTML, CSS, Bootstrap, Fontawesome, Firebase. Description: Galaxy serves as the nation’s absolute leader in product and service needs. and solve all rating, contracting, claims, accounting, and commission needs. and simplified all of your software options to one simple all-inclusive platform that makes your life easy and simple",
+        "_link":"https://figalaxy.com"
+    },
+    {
+        "id":"4",
+        "project_name":"Happy Logistics System",
+        "technology":"Angular - Firebase",
+        "sub_title":"Order Delivery Service platform",
+        "image":"assets/images/portfolio/happy-log.png",
+        "description":"Technologies: Angular, HTML, CSS, Bootstrap, Fontawesome. Description: Happy Logistics Platform is an integrated Order Delivery Service platform that focuses on order delivery. It is a dependable, user-friendly, and scalable platform that accommodates multiple users and transactions simultaneously",
+        "_link":"https://gethappylogistics.com"
+    },
+    {
+        "id":"5",
+        "project_name":"Filling Shilf System",
+        "technology":"Angular",
+        "sub_title":"online website that shares user docs with companies",
+        "image":"assets/images/portfolio/file-shelf.png",
+        "description":"Technologies: Angular, HTML, CSS, Bootstrap, Fontawesome. Description: It’s an online website that shares user docs with companies, uploads files, and makes a full payment process with strapi.",
+        "_link":"https://file-shelf-front.ademo.net"
+    },
+    {
+        "id":"6",
+        "project_name":"Nartik System",
+        "technology":"Angular",
+        "sub_title":"Travel-booking system",
+        "image":"assets/images/portfolio/nartik.png",
+        "description":"Technologies: Angular, HTML, CSS, Bootstrap, Fontawesome. Nartik Platform is a versatile travel-booking system that not only provides comprehensive trip offers, including flights but also integrates shopping deals and credit card offers, complete with personalized options and savings tracking—all in one convenient web and mobile interface",
+        "_link":"https://getnartik.com"
+    },
+    {
+        "id":"7",
+        "project_name":"Amoy Supply System",
+        "technology":"Laravel - PHP",
+        "sub_title":"Platform specializing in customer order delivery",
+        "image":"assets/images/portfolio/amoy.png",
+        "description":"PHP, Laravel. Description: Amoy Supply Platform is a comprehensive service platform specializing in customer order delivery, offering solutions for packaging equipment, promotional gifts, project furniture, and packaging solutions. It’s recognized for its reliability, ease of use, and ability to handle multiple users and transactions at once",
+        "_link":"https://dashboard.amoysupply.com"
+    },
+    {
+        "id":"8",
+        "project_name":"I-makeup",
+        "technology":"Angular - Localize - SSR",
+        "sub_title":"Angular E-commerce (Localized & SSR)",
+        "image":"assets/images/portfolio/i-makeup.png",
+        "description":"Technologies: Angular, Localized, SSR, HTML, CSS, Bootstrap, Fontawesome.",
+        "_link":"https://www.i-makeup.com"
+    }
+]
