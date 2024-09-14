@@ -30,6 +30,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
+        <link href="{{ asset('assets/css/animate.min.css') }}" rel="stylesheet" />
 
 
     </head>
@@ -58,9 +59,9 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To My Zone!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <div class="masthead-subheading animate__animated animate__backInDown">Welcome To My Zone!</div>
+                <div class="masthead-heading text-uppercase animate__animated animate__backInLeft">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase animate__animated animate__jello" href="#services">Tell Me More</a>
             </div>
         </header>
         <!-- Services-->
@@ -71,7 +72,7 @@
                     <h3 class="section-subheading text-muted">Here, I'm Provide Three Services</h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4 animatedSection">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
@@ -79,7 +80,7 @@
                         <h4 class="my-3">E-Commerce</h4>
                         <p class="text-muted">I specialize in building robust and scalable e-commerce solutions that drive sales and enhance customer satisfaction. Utilizing frameworks like Angular. I create visually appealing and user-friendly interfaces that keep customers engaged. I optimize web applications to handle high traffic and provide analytics to monitor performance and sales.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 animatedSection">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
@@ -87,7 +88,7 @@
                         <h4 class="my-3">Responsive Design</h4>
                         <p class="text-muted">My designs adapt to the user’s device, providing an intuitive and engaging experience, reducing bounce rates, and improving user retention. I focus on speed and usability, ensuring your site is both beautiful and functional.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 animatedSection">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
@@ -107,7 +108,7 @@
                 </div>
                 <div class="row">
                     @foreach ($portfolio_arr as $portfolio)
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-4 col-sm-6 mb-4 animatedSection">
                             <!-- Portfolio item 1-->
                             <div class="portfolio-item">
                                 <a class="portfolio-link" onclick="getPortfolioModal('{{$portfolio['id']}}')" data-bs-toggle="modal" href="#portfolioModal">
@@ -163,7 +164,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    {{-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> --}}
+                    <h3 class="section-subheading text-muted" style="color:#fff !important">tel:01270565461 , Email:eslamelzeniny421@gmail.com</h3>
                 </div>
                 <form id="contactForm">
                     <div class="row align-items-stretch mb-5">
@@ -273,7 +274,7 @@
                         });
                     },
                     error: function(error){
-                        const errors = error.responseJSON.errors;
+                        const errors = error.responseJSON.error;
                         let errors_keys = Object.keys(errors);
                         toastr.warning(errors[errors_keys[0]][0]);
                     }
@@ -285,6 +286,21 @@
             //     var formData = new FormData(document.querySelector('#contactForm'))
             //     console.log(formData);
             // }
+
+            window.addEventListener('scroll', () => {
+                const sections = document.querySelectorAll('.animatedSection');
+
+                const windowHeight = window.innerHeight;
+                sections.forEach(e => {
+                    const sectionPosition = e.getBoundingClientRect().top;
+                    if (sectionPosition < windowHeight * 0.75) {
+                        e.classList.add('animate__animated', 'animate__fadeInUp');
+                    }
+
+                });
+
+
+            });
         </script>
     </body>
 </html>
